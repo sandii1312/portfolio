@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="x-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Personal portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b1fd54a1fc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="data/logo.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi, I'am <span>Santhosh kumar</span><br>From Karur</h1>
+    
+                </div>
+            </div>
+        </div>
+        <!--------------ABOUT------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-column-1">
+                        <img src="data/user.png"/>
+                    </div>
+                    <div class="about-column-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I'm student of sri shakthi institute of 
+                            engineering and technology,coimbatore. 
+                            studying in the department of Artificial
+                             Intelligence And Data Science. Now, I'm studying 
+                             second year. Learning web devolopment as a 
+                             full stack devoloper.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                                <li><span>Web development</span><br>web App development</li>
+                                <li><span>App development</span><br>Building Android/IOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-current</span><br>Bachelor of technology</li>
+                                <li><span>2019-2021</span><br>Higher Secondary School</li>
+                                <li><span>2007-2019</span><br>Secondary School</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Professional Course</span><br>B.Tech AI-DS in Sri Shakthi institute of engineering and technology</li>
+                                <li><span>Higher Secondary School</span><br>Star Matriculation Higher Secondary School</li>
+                                <li><span>Secondary School</span><br>St. Antony's Matriculation Higher Secondary School</li>
+                            </ul> 
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------services--------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Use design programs to create visual elements. 
+                            Website designers usually have expertise in UI, 
+                            or user interface, which means they strategically
+                             design a site that's intuitive and easy for 
+                             visitors to navigate.</p>
+                             <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Use design programs to create visual elements. 
+                            Website designers usually have expertise in UI, 
+                            or user interface, which means they strategically
+                             design a site that's intuitive and easy for 
+                             visitors to navigate.</p>
+                             <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>Use design programs to create visual elements. 
+                            Website designers usually have expertise in UI, 
+                            or user interface, which means they strategically
+                             design a site that's intuitive and easy for 
+                             visitors to navigate.</p>
+                             <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-----------------portfolio------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1> 
+                <div class="work-list">
+                    <div class="work">
+                        <img src="data/work-1.jpg" >
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you around the world with talented 
+                                peoples. Download it from PlayStore.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="data/work-2.jpg" >
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects you around the world with talented 
+                                peoples. Download it from PlayStore.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="data/work-3.jpg" >
+                        <div class="layer">
+                            <h3>Online shoping App</h3>
+                            <p>The app connects you around the world with talented 
+                                peoples. Download it from PlayStore.</p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!----------------Contact-------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>7092708250</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="/data/CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button name="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg" ></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @santhosh_kumar. Made with by <i class="fa-solid fa-heart"></i> Sandii</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links"); 
+            var tabcontents = document.getElementsByClassName("tab-contents"); 
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-links");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-links")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbwNJaHal0bUaYZz5I83iFoLT4_bBYS_-2C3HGb14Lcj1jjkkLxjV9Yw3kDZHViS2RlG/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            const msg = document.getElementById("msg");
+            
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                fetch(scriptURL, { method: "POST", body: new FormData(form)})
+                .then((Response) => {
+                    msg.innerHTML = "Message sent successfullly!";
+                    setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+                } )
+                .catch((error)=> console.error("Error!", error.message))
+            });
+        </script>
+    </body>
+</html>
